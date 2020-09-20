@@ -1,0 +1,32 @@
+.main {
+   position: absolute;
+   padding-top: 120px;
+   height: 100vh;
+   width: 100vw;
+   &__title {
+      width: 50%;
+      font-size: 3.5em;
+      line-height: 1.2;
+      font-weight: 700;
+      padding-bottom: 50px;
+   }
+
+   &__subtitle {
+      padding-bottom: 80px;
+   }
+
+   &__button {
+      padding: 10px 20px;
+      border: 3px solid #ee9292;
+      // border-radius: 10px;
+      text-transform: uppercase;
+      font-weight: 700;
+      transition: 0.5s ease;
+      font-size: 1.3em;
+
+      &:hover {
+         background: #ee9292;
+         transition: 0.5s ease;
+      }
+   }
+}

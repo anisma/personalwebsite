@@ -1,0 +1,63 @@
+.load {
+   position: absolute;
+   height: 100vh;
+   width: 100vw;
+   top: 0;
+   left: 0;
+   z-index: 5;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   .base {
+      position: absolute;
+      height: 100vh;
+      width: 100vw;
+      background: black;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .b2 {
+      z-index: -1;
+      background: #ee9292;
+   }
+
+   .text {
+      font-size: 3.6em;
+      font-weight: 700;
+      position: absolute;
+   }
+
+   .layer {
+      position: absolute;
+      height: 45vh;
+      width: 100vw;
+      background: balck;
+      left: 0;
+      overflow: hidden;
+   }
+   .l1 {
+      z-index: 4;
+      top: 0;
+      background: black;
+   }
+   .l2 {
+      z-index: 4;
+      bottom: 0;
+      background: black;
+   }
+   .t1 {
+      z-index: 2;
+   }
+
+   .t2 {
+      z-index: 2;
+   }
+}

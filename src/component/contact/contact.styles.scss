@@ -1,0 +1,31 @@
+.contacts {
+   position: absolute;
+   z-index: -6;
+   top: 0;
+   padding-top: 120px;
+
+   &__title {
+      font-size: 15em;
+      font-weight: 400;
+   }
+
+   &__list {
+      padding-left: 55px;
+
+      &__title {
+         margin: 1em 0;
+      }
+
+      li {
+         margin-bottom: 0.8em;
+         a {
+            color: #ee9292;
+            font-size: 1.1em;
+
+            &:hover {
+               color: #fff;
+            }
+         }
+      }
+   }
+}
