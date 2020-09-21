@@ -27,7 +27,7 @@ export const App = (props) => {
       } else {
          setPage(false);
       }
-   });
+   }, [props.location.pathname]);
    return (
       <PageContext.Provider value={[page, setPage]}>
          <div className='App' onMouseMove={handleMouseMove}>
