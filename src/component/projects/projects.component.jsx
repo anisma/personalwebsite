@@ -17,18 +17,27 @@ export const Projects = (props) => {
    return (
       <Section
          className={props.className}
-         background='projects'
-         title='projects'
+         background='portofolios'
+         title='portofolio'
          toggle={toggle}
       >
-         <animated.p style={motion}>
-            Hi! I'm Anis Maghfiroh. I have strong passion for design and
-            technology. I specialize in Front End Development. Interest and
-            exploring UI/UX design field. My passion is all about building
-            elegant and professional user interface and website. Exceptional
-            attention to detail and highly motivated individual to continuosly
-            learn.
-         </animated.p>
+         <animated.ul className='project__list' style={motion}>
+            <li className='item'>
+               <a href='https://cacti-id.herokuapp.com/' target='blank'>
+                  CACTI
+               </a>
+            </li>
+            <li className='item'>
+               <a href='https://crwn-clothing-id.herokuapp.com/' target='blank'>
+                  CRWN-CHLOTING
+               </a>
+            </li>
+            <li className='item'>
+               <a href='https://bloom-id.netlify.app' target='blank'>
+                  BLOOM
+               </a>
+            </li>
+         </animated.ul>
       </Section>
    );
 };

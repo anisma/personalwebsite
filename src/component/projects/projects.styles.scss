@@ -1,0 +1,19 @@
+.project__list {
+   padding: 10px 0;
+   .item {
+      width: fit-content;
+      padding: 10px 5px;
+      margin: 15px 0;
+
+      &:hover a {
+         color: #ee9292;
+      }
+
+      a {
+         font-size: 2em;
+         font-weight: 700;
+         -webkit-text-stroke: 1px #ee9292;
+         color: transparent;
+      }
+   }
+}

@@ -1,8 +1,8 @@
 .contacts {
    position: absolute;
-   z-index: -6;
    top: 0;
-   padding-top: 120px;
+   z-index: 1;
+   padding-top: 110px;
 
    &__title {
       font-size: 15em;
@@ -18,13 +18,14 @@
 
       li {
          margin-bottom: 0.8em;
+
          a {
             color: #ee9292;
-            font-size: 1.1em;
+            font-size: 1.3em;
+         }
 
-            &:hover {
-               color: #fff;
-            }
+         a:hover {
+            color: #fff;
          }
       }
    }

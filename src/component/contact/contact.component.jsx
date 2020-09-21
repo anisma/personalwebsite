@@ -10,12 +10,11 @@ export const Contact = (props) => {
    props.active === 0 ? (toggle = false) : (toggle = true);
    const motion = useSpring({
       opacity: toggle ? 1 : 0,
-      transform: toggle ? 'translateY(0)' : ' translateY(100px)',
+      transform: toggle ? 'translateY(0)' : ' translateY(200px)',
       position: fixed ? 'fixed' : 'absolute',
-      delay: 700,
    });
    return (
-      <animated.div className='contacts sectin' id='contact' style={motion}>
+      <animated.div className='contacts' id='contact' style={motion}>
          <h1 className='contacts__title'>Yo!</h1>
          <ul className='contacts__list'>
             <h3 className='contacts__list__title'>FIND ME ON</h3>

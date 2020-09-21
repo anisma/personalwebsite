@@ -36,7 +36,7 @@ export const Header = () => {
                         </Link>
                      ) : (
                         <Link to='/'>
-                           <pan>back</pan>
+                           <span>back</span>
                         </Link>
                      )}
                   </li>
