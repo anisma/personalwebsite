@@ -37,7 +37,7 @@ export const App = (props) => {
             <Header />
             <Switch>
                <Route exact path='/' component={HomePage} />
-               <Route exact path='/about' component={AboutPage} />
+               <Route path='/about' component={AboutPage} />
             </Switch>
          </div>
       </PageContext.Provider>
