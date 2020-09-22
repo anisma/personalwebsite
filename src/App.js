@@ -14,6 +14,7 @@ export const App = (props) => {
    const [page, setPage] = useState(true);
    const [x, setX] = useState(0);
    const [y, setY] = useState(0);
+   const [width, setWidth] = useState(0);
 
    const handleMouseMove = (e) => {
       setX(e.pageX);
@@ -27,11 +28,12 @@ export const App = (props) => {
       } else {
          setPage(false);
       }
-   }, [props.location.pathname]);
+      setWidth(window.innerWidth);
+   }, [props.location.pathname, width]);
    return (
       <PageContext.Provider value={[page, setPage]}>
          <div className='App' onMouseMove={handleMouseMove}>
-            <Cursor x={x} y={y} />
+            {width > 768 ? <Cursor x={x} y={y} /> : null}
             <Header />
             <Switch>
                <Route exact path='/' component={HomePage} />

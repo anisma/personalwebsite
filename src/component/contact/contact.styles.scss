@@ -30,3 +30,34 @@
       }
    }
 }
+
+@media screen and (max-width: 992px) {
+   .contacts {
+      &__title {
+         font-size: 12em;
+      }
+
+      &__list {
+         padding-left: 50px;
+      }
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .contacts {
+      top: 40%;
+      left: 150px;
+      &__title {
+         font-size: 10em;
+      }
+      &__list {
+         padding-left: 40px;
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .contacts {
+      left: 100px;
+   }
+}

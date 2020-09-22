@@ -30,3 +30,45 @@
       }
    }
 }
+
+@media screen and (max-width: 1024px) {
+   .main {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 0;
+
+      &__title {
+         width: 65vw;
+      }
+
+      &__subtitle {
+         font-size: 2em;
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .main {
+      &__title {
+         width: 76vw;
+      }
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .main {
+      &__title {
+         font-size: 2em;
+      }
+
+      &__subtitle {
+         font-size: 1.2em;
+      }
+
+      &__button {
+         font-size: 1em;
+      }
+   }
+}

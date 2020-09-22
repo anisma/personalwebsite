@@ -1,0 +1,28 @@
+.contacts-section {
+   position: relative;
+
+   &__title {
+      font-size: 8em;
+      font-weight: 400;
+      padding-top: 50px;
+   }
+
+   &__list {
+      &__title {
+         margin: 1em 0;
+      }
+
+      li {
+         margin-bottom: 0.8em;
+
+         a {
+            color: #ee9292;
+            font-size: 1.3em;
+         }
+
+         a:hover {
+            color: #fff;
+         }
+      }
+   }
+}

@@ -14,7 +14,7 @@ export const Contact = (props) => {
       position: fixed ? 'fixed' : 'absolute',
    });
    return (
-      <animated.div className='contacts' id='contact' style={motion}>
+      <animated.div className='contacts section' id='contact' style={motion}>
          <h1 className='contacts__title'>Yo!</h1>
          <ul className='contacts__list'>
             <h3 className='contacts__list__title'>FIND ME ON</h3>

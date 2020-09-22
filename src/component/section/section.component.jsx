@@ -10,7 +10,6 @@ export const Section = (props) => {
       opacity: toggle ? 1 : 0,
       transform: toggle ? 'translateY(0)' : ' translateY(100px)',
       delay: 500,
-      // top: toggle ? '0%' : '100%',
    });
    const motion2 = useSpring({
       opacity: toggle ? 1 : 0,

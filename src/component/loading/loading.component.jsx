@@ -6,11 +6,13 @@ export const LoadingPage = () => {
    const motion1 = useSpring({
       from: {
          transform: 'translateY(100px)',
+         opacity: 1,
       },
       to: async (next) => {
          await next({ transform: 'translateY(-10px)' });
          await next({ transform: 'translateY(0)' });
-         await next({ transform: 'translateY(-500px)' });
+         await next({ transform: 'translateY(-1000px)' });
+         await next({ opacity: 0 });
       },
    });
 
@@ -21,7 +23,8 @@ export const LoadingPage = () => {
       to: async (next, cancel) => {
          await next({ transform: 'translateY(-10px)' });
          await next({ transform: 'translateY(0)' });
-         await next({ transform: 'translateY(-500px)' });
+         await next({ transform: 'translateY(-1000px)' });
+         await next({ opacity: 0 });
       },
       delay: 2000,
    });
@@ -29,19 +32,19 @@ export const LoadingPage = () => {
    const motion3 = useSpring({
       config: { duration: 500 },
       from: { top: 0 },
-      to: { top: -1000 },
+      to: { top: -1500 },
       delay: 4200,
    });
    const motion31 = useSpring({
       config: { duration: 600 },
       from: { bottom: 0 },
-      to: { bottom: 1000 },
+      to: { bottom: 1500 },
       delay: 4200,
    });
    const motion4 = useSpring({
       config: { duration: 700 },
       from: { top: 0 },
-      to: { top: -1000 },
+      to: { top: -1500 },
       delay: 4250,
    });
 

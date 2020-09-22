@@ -42,3 +42,45 @@ section {
       margin-top: 20px;
    }
 }
+
+@media screen and (max-width: 1200px) {
+   section {
+      width: 55%;
+
+      .background {
+         width: 65vw;
+      }
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   section {
+      width: 80%;
+      padding-top: 10vh;
+      margin: 0 auto;
+
+      .background {
+         width: 100vw;
+      }
+   }
+}
+
+@media screen and (max-width: 576px) {
+   section {
+      padding-top: 10vh;
+      .title {
+         font-size: 1.7em;
+         line-height: 2em;
+         justify-content: center;
+         &::before {
+            position: absolute;
+            content: '';
+            z-index: -1;
+            height: 6px;
+            width: 100%;
+            background: #ee9292;
+            bottom: -10px;
+         }
+      }
+   }
+}

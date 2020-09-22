@@ -1,10 +1,9 @@
 header {
    position: fixed;
    z-index: 2;
-   width: 100%;
+   width: 100vw;
    height: 70px;
    padding: 30px 60px 20px;
-   // background: $primary_color;
 
    .nav {
       display: flex;
@@ -23,14 +22,37 @@ header {
                width: 35px;
                height: 35px;
                border-radius: 50%;
-               top: -10px;
-               left: -10px;
+               top: -25%;
+               left: -10%;
             }
          }
       }
 
       span:hover {
          color: #ee9292;
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   header {
+      padding: 30px 20px 20px;
+   }
+}
+
+@media screen and (max-width: 576px) {
+   header {
+      .nav {
+         &__left {
+            h3 {
+               font-size: 1em;
+
+               &::before {
+                  width: 25px;
+                  height: 25px;
+               }
+            }
+         }
       }
    }
 }
