@@ -62,9 +62,11 @@
    }
 }
 
-@media screen and (max-width: 10242px) {
-   .text {
-      font-size: 3.6em;
+@media screen and (max-width: 1024px) {
+   .load {
+      .text {
+         font-size: 3.6em;
+      }
    }
 }
 
