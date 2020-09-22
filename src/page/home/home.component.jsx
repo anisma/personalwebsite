@@ -38,7 +38,7 @@ class HomePage extends Component {
          .delete(27)
          .type('I design user interface for website.')
          .pause(500)
-         .delete(20)
+         .delete(40)
          .type('I watch movie during my non-coding hours.')
          .pause(500)
          .delete(43)
