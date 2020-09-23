@@ -36,6 +36,9 @@ export const Hero = (props) => {
                <img className='hero__images__image' src={img} alt='' />
             </animated.div>
          </div>
+         <div className='scroll'>
+            <span className='chevron'></span>
+         </div>
       </div>
    );
 };

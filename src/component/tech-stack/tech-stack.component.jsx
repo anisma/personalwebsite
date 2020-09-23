@@ -24,27 +24,34 @@ export const TechStack = (props) => {
          </animated.p>
          <animated.ul className='items' style={motion}>
             <li>
+               <span className='tooltip'>HTML</span>
                <img src={require('../../assets/html5.svg')} alt='html5' />
             </li>
             <li>
+               <span className='tooltip'>CSS</span>
                <img src={require('../../assets/css3.svg')} alt='css3' />
             </li>
             <li>
+               <span className='tooltip'>Javascript</span>
+
                <img
                   src={require('../../assets/javascript.svg')}
                   alt='javascript'
                />
             </li>
             <li>
+               <span className='tooltip'>Saas</span>
                <img src={require('../../assets/sass.svg')} alt='sass' />
             </li>
             <li>
+               <span className='tooltip'>Bootstrap</span>
                <img
                   src={require('../../assets/bootstrap.svg')}
                   alt='bootstrap'
                />
             </li>
             <li>
+               <span className='tooltip'>React</span>
                <img src={require('../../assets/reactjs.svg')} alt='reactjs' />
             </li>
          </animated.ul>

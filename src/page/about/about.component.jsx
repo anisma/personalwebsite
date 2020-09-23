@@ -27,7 +27,7 @@ export const AboutPage = () => {
       <Container>
          {width > 576 ? <Contact active={active} /> : null}
          <ReactFullpage
-            licenseKey={null}
+            licenseKey={'YOUR KEY HERE'}
             scrollingSpeed={1000}
             autoScrolling={true}
             navigation={true}
