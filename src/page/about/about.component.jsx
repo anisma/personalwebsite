@@ -25,29 +25,53 @@ export const AboutPage = () => {
 
    return (
       <Container>
-         {width > 576 ? <Contact active={active} /> : null}
-         <ReactFullpage
-            licenseKey={'YOUR KEY HERE'}
-            scrollingSpeed={1000}
-            autoScrolling={true}
-            navigation={true}
-            navigationPosition={'right'}
-            loopBottom={true}
-            loopTop={true}
-            onLeave={onLeave}
-            css3={true}
-            render={(state, fullPageApi) => (
-               <ReactFullpage.Wrapper>
-                  <Hero className='section' active={active} />
-                  <AboutMe className='section' active={active} />
-                  <TechStack className='section' active={active} />
-                  <Projects className='section' active={active} />
-                  {width <= 576 ? (
-                     <ContactSection className='section' active={active} />
-                  ) : null}
-               </ReactFullpage.Wrapper>
-            )}
-         />
+         {width > 576 ? (
+            <div>
+               <Contact active={active} />
+               <ReactFullpage
+                  licenseKey={'YOUR KEY HERE'}
+                  scrollingSpeed={1000}
+                  autoScrolling={true}
+                  navigation={true}
+                  navigationPosition={'right'}
+                  loopBottom={true}
+                  loopTop={true}
+                  onLeave={onLeave}
+                  css3={true}
+                  render={(state, fullPageApi) => (
+                     <ReactFullpage.Wrapper>
+                        <Hero className='section' active={active} />
+                        <AboutMe className='section' active={active} />
+                        <TechStack className='section' active={active} />
+                        <Projects className='section' active={active} />
+                     </ReactFullpage.Wrapper>
+                  )}
+               />
+            </div>
+         ) : (
+            <div>
+               <ReactFullpage
+                  licenseKey={'YOUR KEY HERE'}
+                  scrollingSpeed={1000}
+                  autoScrolling={true}
+                  navigation={true}
+                  navigationPosition={'right'}
+                  loopBottom={true}
+                  loopTop={true}
+                  onLeave={onLeave}
+                  css3={true}
+                  render={(state, fullPageApi) => (
+                     <ReactFullpage.Wrapper>
+                        <Hero className='section' active={active} />
+                        <AboutMe className='section' active={active} />
+                        <TechStack className='section' active={active} />
+                        <Projects className='section' active={active} />
+                        <ContactSection className='section' active={active} />
+                     </ReactFullpage.Wrapper>
+                  )}
+               />
+            </div>
+         )}
       </Container>
    );
 };
