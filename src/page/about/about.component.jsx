@@ -14,18 +14,35 @@ import './about.styles.scss';
 export const AboutPage = () => {
    const [active, setActive] = useState(0);
    const [width, setWidth] = useState(0);
+   const [height, setHeight] = useState(0);
 
    const onLeave = (origin, destination, direction) => {
       setActive(destination.index);
    };
 
    useEffect(() => {
+      window.addEventListener('resize', () => {
+         setWidth(window.innerWidth);
+         setHeight(window.innerHeight);
+      });
+
+      return () => {
+         window.addEventListener('resize', () => {
+            setHeight(window.innerHeight);
+            setWidth(window.innerWidth);
+         });
+      };
+   }, []);
+
+   useEffect(() => {
+      setHeight(window.innerHeight);
       setWidth(window.innerWidth);
-   }, [width]);
+   }, [width, height]);
 
    return (
       <Container>
-         {width > 576 ? (
+         {/* width > 576 || */}
+         {(height < 720 && width > 768) || (width > 576 && height > 720) ? (
             <div>
                <Contact active={active} />
                <ReactFullpage

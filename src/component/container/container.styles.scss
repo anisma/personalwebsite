@@ -1,6 +1,7 @@
 .container {
    max-width: 992px;
    margin: 0 auto;
+   // padding: 0 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -17,12 +18,8 @@
 
 @media screen and (max-width: 768px) {
    .container {
-      max-width: 700px;
-   }
-}
-
-@media screen and (max-width: 576px) {
-   .container {
-      max-width: 90vw;
+      // max-width: 600px;
+      width: 100%;
+      padding: 0 20px;
    }
 }

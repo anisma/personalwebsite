@@ -31,10 +31,21 @@
    }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) and (min-height: 700px) {
    .contacts {
       &__title {
-         font-size: 12em;
+         font-size: 8em;
+      }
+
+      &__list {
+         padding-left: 40px;
+      }
+   }
+}
+@media screen and (max-width: 768px) {
+   .contacts {
+      &__title {
+         font-size: 8em;
       }
 
       &__list {
@@ -42,16 +53,15 @@
       }
    }
 }
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-height: 900px) {
    .contacts {
       top: 40%;
       left: 150px;
       &__title {
-         font-size: 10em;
+         font-size: 8em;
       }
       &__list {
-         padding-left: 40px;
+         padding-left: 30px;
       }
    }
 }
