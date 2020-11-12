@@ -133,6 +133,9 @@
             line-height: 1.2em;
             font-size: 3em;
          }
+         .text {
+            font-size: 1.5em;
+         }
       }
    }
 }
@@ -192,11 +195,15 @@
          justify-self: center;
 
          .title {
-            font-size: 3em;
+            font-size: 2.5em;
 
             &::before {
                content: '';
+               bottom: 0.7em;
             }
+         }
+         .text {
+            font-size: 1.2em;
          }
       }
 
