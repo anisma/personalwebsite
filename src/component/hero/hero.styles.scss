@@ -35,7 +35,7 @@
             content: '';
             position: absolute;
             height: 0.2em;
-            bottom: 0.8em;
+            bottom: 0.75em;
             width: 70%;
             right: 0;
             z-index: -1;
@@ -135,6 +135,10 @@
          }
          .text {
             font-size: 1.5em;
+            &::before {
+               content: '';
+               bottom: 0.7em;
+            }
          }
       }
    }
@@ -199,7 +203,7 @@
 
             &::before {
                content: '';
-               bottom: 0.7em;
+               bottom: 0.6em;
             }
          }
          .text {
@@ -237,6 +241,7 @@
 
             &::before {
                content: '';
+               bottom: 0.75em;
             }
          }
          .text {
